@@ -1,7 +1,7 @@
 server:
   port: 8090
   servlet:
-    context-path: /bly/auth
+    context-path: /sample
 
 logging:
   level:
@@ -10,11 +10,11 @@ logging:
 
 spring:
   application:
-    name: bly-auth-server
+    name: sample-auth-server
 
 oauth2:
   client-id: web-client
   client-secret: web-secret
-  token-uri: http://localhost:8090/bly/auth/oauth2/token
-  redirect-uri: http://localhost:8090/bly/auth/login/oauth2/code/demo-client
+  token-uri: http://localhost:8090/sample/oauth2/token
+  redirect-uri: http://localhost:8090/sample/login/oauth2/code/demo-client
 

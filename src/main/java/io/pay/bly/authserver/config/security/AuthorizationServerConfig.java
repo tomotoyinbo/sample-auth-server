@@ -148,7 +148,7 @@ public class AuthorizationServerConfig {
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-                .redirectUri("http://127.0.0.1:8090/bly/auth/login/oauth2/code/demo-client")
+                .redirectUri("http://127.0.0.1:8090/sample/login/oauth2/code/demo-client")
                 .tokenSettings(TokenSettings.builder()
                         .accessTokenFormat(OAuth2TokenFormat.REFERENCE)
                         .accessTokenTimeToLive(Duration.ofMinutes(30))
@@ -167,7 +167,7 @@ public class AuthorizationServerConfig {
     public AuthorizationServerSettings authorizationServerSettings() {
 
         return AuthorizationServerSettings.builder()
-                .issuer("http://127.0.0.1:8090/bly/auth")
+                .issuer("http://127.0.0.1:8090")
                 .build();
     }
 }
